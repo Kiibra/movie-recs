@@ -6,5 +6,5 @@ const movies = [
 ]
 
 export {
-  movies
+  movies,
 }

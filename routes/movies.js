@@ -9,6 +9,9 @@ router.get('/', moviesCtrl.index)
 
 router.get('/new', moviesCtrl.new)
 
+// add the show route below new route and above the create route
+router.get('/:movieId', moviesCtrl.show)
+
 // define the route to create new movie
 router.post('/', moviesCtrl.create)
 

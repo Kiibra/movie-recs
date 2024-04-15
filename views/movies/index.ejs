@@ -6,15 +6,15 @@
   <title>Express Movies-Recs</title>
 </head>
 <body>
-  <h1>Movies</h1>
+  <h1>Movies as of <%= date %> </h1>
   <ul>
     <% movies.forEach(movie => { %>
     <li>
-      <%= movie.name%>
+      <a href="/movies/<%= movie._id %>"><%= movie.name%></a>
       * *
       <%= movie.genre  %>
       ---
-      <%= movie.watched ? 'watched' : 'not watched' %>
+      <%= movie.done ? 'watched' : 'not watched' %>
     </li>
     <% }) %>
   </ul>

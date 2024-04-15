@@ -6,10 +6,10 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>New Movie</h1>
-  <form action="/movies" method="POST" autocomplete="off">
-    <input type="text" name="text">
-    <button type="submit">Save Movie</button>
-  </form>
+  <h1>Movies</h1>
+  <h2>Movie #<%= movie._id %></h2>
+  <h3><%= movie.text %></h3>
+  <p>Statues: <%= movie.done ? 'Yes' : 'No' %> </p>
+  <a href="/movies">Go Back</a>
 </body>
 </html>
