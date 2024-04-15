@@ -5,8 +5,11 @@ function index(req, res) {
     movies: movies
   })
 }
-
+function newMovie(req, res){
+  res.render('movies/new')
+}
 
 export {
   index,
+  newMovie as new,
 }
