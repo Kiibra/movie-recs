@@ -9,4 +9,7 @@ router.get('/', moviesCtrl.index)
 
 router.get('/new', moviesCtrl.new)
 
+// define the route to create new movie
+router.post('/', moviesCtrl.create)
+
 export { router }
