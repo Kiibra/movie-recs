@@ -10,8 +10,10 @@
   <ul>
     <% movies.forEach(movie => { %>
     <li>
-      <%= movie.text %>
-      - 
+      <%= movie.name%>
+      * *
+      <%= movie.genre  %>
+      ---
       <%= movie.watched ? 'watched' : 'not watched' %>
     </li>
     <% }) %>
